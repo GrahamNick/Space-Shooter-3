@@ -7,6 +7,9 @@ public class destroyByBoundary : MonoBehaviour {
 		if (other.tag == "Sun") {
 			return;
 		}
+		if (other.tag == "Player") {
+			return;
+		}
 		Destroy (other.gameObject);
 	}
 }

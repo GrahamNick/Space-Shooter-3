@@ -11,6 +11,7 @@ public class GameController : MonoBehaviour {
 	public Text gameover;
 	private bool gameover2;
 	private bool restart2;
+	public bool Win;
 	public GameObject hazard;
 	public Vector3 spawnValues;
 	public int hazardCount;
@@ -35,6 +36,10 @@ public class GameController : MonoBehaviour {
 				SceneManager.LoadScene ("Main");
 			}
 		}
+		if (Win) {
+			SceneManager.LoadScene (1); 
+		}
+
 	}
 	IEnumerator SpawnWaves () {
 		yield return new WaitForSecondsRealtime (startWait);
@@ -70,8 +75,13 @@ public class GameController : MonoBehaviour {
 		countText.text = "Score " + score;
 	}
 	public void Gameover () {
-		gameover.text = "Game Over...";
+		gameover.text = "Gameover";
 		gameover2 = true;
+	}
+	public void winCondition() {
+		Win = true;
+		restart.text = "";
+		gameover.text = "";
 	}
 }
 

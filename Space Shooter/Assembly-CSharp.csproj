@@ -85,6 +85,9 @@
      <Compile Include="Assets\Scripts\mover.cs" />
      <Compile Include="Assets\Scripts\PlayerMover.cs" />
      <Compile Include="Assets\Scripts\randomRotator.cs" />
+     <Compile Include="Assets\Scripts\SpinFree.cs" />
+     <Compile Include="Assets\Scripts\SunWin.cs" />
+     <Compile Include="Assets\Scripts\win.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
      <None Include="Assets\Lobby\Documentation.txt" />
      <None Include="Assets\Lobby\Instruction.txt" />
