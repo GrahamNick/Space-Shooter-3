@@ -1,6 +1,5 @@
 WindowsStandalone
 SceneListBegin?
-Assets/_scenes/Win.unity
 Assets/_scenes/Main.unity
 SceneListEnd?
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.NetworkLobbyHook
@@ -146,8 +145,9 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 3f32f08a64daf40b09ed864d96fe3840 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransform
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
-16aeefa64db47af791537ae068331cd1 Assembly-CSharp.dll:.GameController
+b4e509f657e64ac075ded3b2fa7c17c2 Assembly-CSharp.dll:.GameController
 9df66eabd13ec25662ca2cc97dec33c3 Assembly-CSharp.dll:.NetworkGameManager
+883e95d0ec3a5c8dabd14d2c16c3c0c2 Assembly-CSharp.dll:.SpinFree
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
 96d0fbde9fd209878a0a291f82c9bcdd UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController
 64eb32cc721b1cc68a91ed57461e188c UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.RemoteTestResultSender
@@ -173,6 +173,6 @@ e6620c373ab7ec2b45024da89745a65e Assembly-CSharp.dll:.Done_BGScroller
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.destroyByBoundary
 239d2cc8d353bbfcbefc27fa8f0221cc Assembly-CSharp.dll:Prototype.NetworkLobby.LobbyServerList
 a0dcef889bcbbdb0a398c4e8e4b8e14b Assembly-CSharp.dll:.Done_GameController
-883e95d0ec3a5c8dabd14d2c16c3c0c2 Assembly-CSharp.dll:.SpinFree
-776aac861bd9dfe0df55b9df1f9a9d8e Assembly-CSharp.dll:.SunWin
-650c1e412dac0323d37ae3023565f947 Assembly-CSharp.dll:.win
+526a9fddf4d1840dd4a2bc1349b1d761 Assembly-CSharp.dll:.BGScroller
+a103ef39709a6c39ff0e24f81396e8e5 Assembly-CSharp.dll:.WeaponCont
+b501b3d408fc45ec10b62b6f4e78e4bf Assembly-CSharp.dll:.evasiveManuver

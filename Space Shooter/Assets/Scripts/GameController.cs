@@ -12,12 +12,15 @@ public class GameController : MonoBehaviour {
 	private bool gameover2;
 	private bool restart2;
 	public bool Win;
-	public GameObject hazard;
+	public GameObject[] hazards;
 	public Vector3 spawnValues;
 	public int hazardCount;
 	public float spawnWait;
 	public float startWait;
 	public float waveWait;
+	public GameObject sun;
+	public GameObject player;
+
 	[HideInInspector]
 	public int score;
 
@@ -36,15 +39,12 @@ public class GameController : MonoBehaviour {
 				SceneManager.LoadScene ("Main");
 			}
 		}
-		if (Win) {
-			SceneManager.LoadScene (1); 
-		}
-
 	}
 	IEnumerator SpawnWaves () {
 		yield return new WaitForSecondsRealtime (startWait);
 		while(true) {
 			for (var i = 0; i <= hazardCount; i++) {
+				GameObject hazard = hazards[Random.Range (0,hazards.Length)];
 				Vector3 spawnLocation = new Vector3 (
 					Random.Range (-spawnValues.x, spawnValues.x),
 					spawnValues.y,
@@ -65,6 +65,12 @@ public class GameController : MonoBehaviour {
 				restart2 = true;
 				break;
 			}
+			if (Time.realtimeSinceStartup == 318.0f) {
+				player.SetActive (false);
+				sun.SetActive (false);
+				Win = true;
+				gameover.text = "You Win! Congratulations!!";				
+			}
 		}
 	}
 	public void AddScore (int newScoreValue) {
@@ -77,11 +83,6 @@ public class GameController : MonoBehaviour {
 	public void Gameover () {
 		gameover.text = "Gameover";
 		gameover2 = true;
-	}
-	public void winCondition() {
-		Win = true;
-		restart.text = "";
-		gameover.text = "";
 	}
 }
 
